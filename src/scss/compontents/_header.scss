@@ -1,0 +1,40 @@
+.header {
+    // border: 1px solid red;
+    // background-color: lightblue;
+    position: relative;
+    top: 30px;
+    background-color: $transparent;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &__navigation {
+        @extend .container;
+        // border: 2px solid green;
+        @include flex($alignment: center, $justification: space-between);
+
+        padding: 0;
+    }
+
+    &__logo {
+        // border: 1px solid red;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        height: 32px;
+    }
+
+    &__logo img {
+    }
+
+    &__list-items {
+        @include flex($alignment: center, $justification: flex-end);
+        gap: 30px;
+        // border: 2px solid blue;
+        list-style: none;
+    }
+
+    &__list-item {
+        @include text(14px, 400, $dark-blue-color, 24px);
+        letter-spacing: 1.28px;
+    }
+}
