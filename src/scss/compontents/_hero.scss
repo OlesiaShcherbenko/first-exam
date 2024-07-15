@@ -1,7 +1,25 @@
 .hero {
-    // background-image: url(../../assets/bg-hero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     // border: 1px solid green;
-    height: 993px;
+    margin-top: 174px;
+   
+    
+
+    &__container {
+        @extend .container-hero;
+        // border: 1px solid red;
+        width: 523px;
+        height: auto;
+        // @include flex(column, flex-start);
+    }
+
+    &__heading {
+        @include text(44px, 400, $dark-blue-color, 52px, "secondary");
+        margin-bottom: 20px;
+    }
+
+   &__description {
+    @include text(18px, 300, $dark-blue-color, 26px);
+    margin-bottom: 50px;
+    max-width: 439px;
+   }
 }

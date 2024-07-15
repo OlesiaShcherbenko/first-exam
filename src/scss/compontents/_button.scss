@@ -1,0 +1,18 @@
+.button {
+    position: relative;
+
+    &__link {
+        text-decoration: none;
+        @include text(20px, 700, $coral-color, 20px);
+        letter-spacing: 1.28px;
+    }
+
+    &__bg {
+        height: 13px;
+        width: 112px;
+        background-color: $coral-color-30;
+        position: absolute;
+        left: 10px;
+        top: 11px;
+    }
+}
