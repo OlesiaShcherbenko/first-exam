@@ -2,11 +2,11 @@
     // border: 1px solid blue;
     margin-top: 174px;
     margin-bottom: 150px;
-    @include flex($justification: flex-start);
+    // @include flex($justification: flex-start);
 
     &__container {
         max-width: 523px;
-        margin-left: 135px;
+        // margin-left: 135px;
     }
 
     &__heading {
