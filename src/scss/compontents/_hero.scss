@@ -3,18 +3,10 @@
     margin-top: 174px;
     margin-bottom: 150px;
     @include flex($justification: flex-start);
-    
-   
-    
 
     &__container {
-        // @extend .container-hero;
-        // border: 1px solid red;
         max-width: 523px;
-        // border: 1px solid green;
-        // height: auto;
         margin-left: 135px;
-        
     }
 
     &__heading {
@@ -22,9 +14,9 @@
         margin-bottom: 20px;
     }
 
-   &__description {
-    @include text(18px, 300, $dark-blue-color, 26px);
-    margin-bottom: 50px;
-    max-width: 439px;
-   }
+    &__description {
+        @include text(18px, 300, $dark-blue-color, 26px);
+        margin-bottom: 50px;
+        max-width: 439px;
+    }
 }
