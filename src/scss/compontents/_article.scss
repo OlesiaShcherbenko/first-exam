@@ -1,0 +1,5 @@
+.article {
+    @include flex($direction: column);
+    row-gap: 120px;
+    // border: 1px solid red;
+}

@@ -5,6 +5,7 @@
         text-decoration: none;
         @include text(20px, 700, $coral-color, 20px);
         letter-spacing: 1.28px;
+        text-transform: uppercase;
     }
 
     &__bg {

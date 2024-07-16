@@ -1,15 +1,20 @@
 .hero {
-    // border: 1px solid green;
+    // border: 1px solid blue;
     margin-top: 174px;
+    margin-bottom: 150px;
+    @include flex($justification: flex-start);
+    
    
     
 
     &__container {
-        @extend .container-hero;
+        // @extend .container-hero;
         // border: 1px solid red;
-        width: 523px;
-        height: auto;
-        // @include flex(column, flex-start);
+        max-width: 523px;
+        // border: 1px solid green;
+        // height: auto;
+        margin-left: 135px;
+        
     }
 
     &__heading {

@@ -1,0 +1,75 @@
+.info {
+    position: relative;
+    display: inline-block;
+
+    &__image {
+        max-width: 570px;
+        max-height: 670px;
+        display: block;
+    }
+
+    &__text-container {
+        background-color: $white-color-90;
+        max-width: 770px;
+        max-height: auto;
+        position: absolute;
+        top: 45px;
+        left: 400px;
+    }
+
+    &__text-container {
+        @include flex();
+        // border: 1px solid red;
+        padding: 45px 0;
+    }
+
+    &__list {
+        width: 370px;
+        text-align: center;
+        @include flex($direction: column, $alignment: center);
+    }
+
+    &__list-item {
+        width: 100%;
+        // border: 1px solid green;
+    }
+
+    &__statistic {
+        @include flex($alignment: flex-end, $justification: center);
+        gap: 10px;
+        // border: 1px solid green;
+        margin-bottom: 12px
+    }
+
+    &__symbol {
+        @include text(40px, 400, $gray-color, 50px, "secondary");
+        // border: 1px solid green;
+    }
+
+    &__number {
+        @include text(68px, 400, $dark-blue-color, 72px, "secondary");
+        // border: 1px solid green;
+    }
+
+    &__statistic-description {
+        @include text(18px, 300, $dark-blue-color, 26px);
+    }
+
+    &__description {
+        max-width: 400px;
+    }
+
+    &__text {
+        @include text(18px, 300, $dark-blue-color, 26px);
+        margin-bottom: 50px;
+    }
+
+    &__divider {
+        height: 1px;
+        width: 100px;
+        background-color: $green-color;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        
+    }
+}
