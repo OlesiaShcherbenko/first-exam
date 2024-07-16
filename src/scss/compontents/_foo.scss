@@ -1,0 +1,34 @@
+.foo {
+    &__divider {
+        height: 1px;
+        width: 100%;
+        background-color: $gray-color;
+    }
+
+    &__wrapper {
+        @include flex($alignment: center, $justification: space-between);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        // border: 1px solid red;
+    }
+
+    &__meta {
+        @include text(14px, 300, $dark-blue-color-60, 26px);
+    }
+
+    &__link {
+        text-decoration: none;
+        @include text(14px, 400, $dark-blue-color, 26px);
+        letter-spacing: 1.28px;
+    }
+
+    &__dev {
+        @include flex();
+        column-gap: 12px;
+    }
+
+    &__agreements {
+        @include flex();
+        column-gap: 32px;
+    }
+}
