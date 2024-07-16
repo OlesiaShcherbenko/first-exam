@@ -16,9 +16,9 @@
         <module href="/src/templates/header.html"></module>
 
         <main class="main">
-            <div class="container article">
+            <div class="container">
                 <section class="hero">
-                    <div class="hero__container">
+                    <div class="hero__wrapper">
                         <h1 class="hero__heading">
                             A peer-to-peer stablecoin
                             <strong class="accent hero__accent"
@@ -37,11 +37,11 @@
                     </div>
                 </section>
 
-                <section class="info">
+                <div class="info">
                     <img
                         class="info__image"
-                        src="../assets/bg-info.png"
-                        alt=""
+                        src="src/assets/bg-info.png"
+                        alt="info"
                     />
                     <div class="info__text-container">
                         <div class="info__list">
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
 
                 <section class="benefits">
                     <div class="benefits__wrapper">
@@ -199,25 +199,21 @@
                     ></module> -->
                 </section>
 
-                <section class="quote">
-                    <div class="quote__wrap">
-                        <img
-                            class="quote__icon"
-                            src="../assets/icon-quote.svg"
-                            alt="quote"
-                        />
-                        <div class="quote__text-wrap">
-                            <p class="quote__text">
-                                Solis Group serves as a liquidity nexus that
-                                gives stablecoin issuers, holders and exchanges
-                                certainty over access and liquidity
-                            </p>
-                            <p class="quote__author">
-                                Lennon Burnett, Solis Group CEO
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                <div class="quote">
+                    <blockquote class="quote__wrap">
+                        <svg class="quote__icon">
+                            <use xlink:href="./src/assets/sprite.svg#quotes" />
+                        </svg>
+                        <p class="quote__text">
+                            Solis Group serves as a liquidity nexus that gives
+                            stablecoin issuers, holders and exchanges certainty
+                            over access and liquidity
+                        </p>
+                        <footer class="quote__author">
+                            Lennon Burnett, Solis Group CEO
+                        </footer>
+                    </blockquote>
+                </div>
 
                 <!-- <section class="video">
                   <div class="video__inner">
@@ -231,7 +227,7 @@
                 <section class="promises">
                     <img
                         class="promises__image"
-                        src="../assets/bg-features.png"
+                        src="src/assets/bg-features.png"
                         alt="features"
                     />
                     <div class="promises__text-container">

@@ -17,13 +17,14 @@
 
     &__logo {
         // border: 1px solid red;
-        padding: 0;
-        margin: 0;
-        display: inline-block;
+        width: 107.2px;
         height: 32px;
-    }
-
-    &__logo img {
+        fill: $white-color;
+        // padding: 0;
+        // margin: 0;
+        // display: inline-block;
+        // height: 32px;
+        // width: 107.2px;
     }
 
     &__list-items {
