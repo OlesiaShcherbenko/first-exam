@@ -1,14 +1,64 @@
-// .video {
-    
-//     background-color: $coral-color;
+.video {
+    // border: 1px solid blue;
+    @include flex($justification: center);
 
-//     &__inner {
-//         width: 970px;
-//         height: 601px;
-//     }
+    &__inner {
+        // border: 1px solid red;
+        width: 970px;
+        height: auto;
+    }
 
-//     &__screensaver {
-//         width: 870px;
-//         height: 539px;
-//     }
-// }
+    &__figure {
+        @include flex($direction: column);
+        row-gap: 50px;
+    }
+
+    &__tablet {
+        position: relative;
+    }
+
+    &__frame {
+        width: 870px;
+        height: 539px;
+        position: absolute;
+        top: 31px;
+        left: 30px;
+        border: none;
+        visibility: hidden;
+    }
+
+    &__mockup-tablet {
+        // position: relative;
+        width: 970px;
+        height: 601px;
+    }
+
+    &__screensaver {
+        position: absolute;
+        width: 870px;
+        height: 539px;
+        top: 31px;
+        left: 30px;
+        // z-index: 1;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 240px;
+        left: 405px;
+    }
+
+    &__figcaption {
+        width: 880px;
+        height: auto;
+    }
+
+    &__titel {
+        @include text(40px, 400, $dark-blue-color, 48px, "secondary");
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        @include text(18px, 300, $dark-blue-color-80, 26px);
+    }
+}
