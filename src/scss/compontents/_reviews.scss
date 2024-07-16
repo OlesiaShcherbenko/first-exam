@@ -1,0 +1,45 @@
+.reviews {
+    &__heading {
+        width: 400px;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        @include text(40px, 400, $dark-blue-color, 48px, "secondary");
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        @include text(18px, 300, $dark-blue-color-80, 26px);
+    }
+
+    &__cards-wrapper {
+        @include flex();
+        gap: 30px;
+    }
+
+    &__card {
+        // background-color: $dark-blue-color;
+        background-image: url(../../assets/bg-client-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 370px;
+        height: 340px;
+    }
+
+    &__text-wrapper {
+        margin: 30px 40px;
+    }
+
+    &__text {
+        @include text(16px, 400, $white-color-80, 26px);
+        margin-bottom: 26px;
+        min-height: 234px;
+    }
+
+    &__author {
+        @include text(20px, 400, $white-color, 20px, "secondary");
+        font-style: italic;
+        letter-spacing: 1.28px;
+    }
+}
