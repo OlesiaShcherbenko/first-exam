@@ -15,7 +15,7 @@
     }
 
     &__description {
-        @include text(18px, 300, $dark-blue-color, 26px);
+        @include text(18px, 300, $dark-blue-color-80, 26px);
         margin-bottom: 50px;
         max-width: 439px;
     }

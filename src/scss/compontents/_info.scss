@@ -15,9 +15,6 @@
         position: absolute;
         top: 45px;
         left: 400px;
-    }
-
-    &__text-container {
         @include flex();
         // border: 1px solid red;
         padding: 45px 0;
@@ -38,7 +35,7 @@
         @include flex($alignment: flex-end, $justification: center);
         gap: 10px;
         // border: 1px solid green;
-        margin-bottom: 12px
+        margin-bottom: 12px;
     }
 
     &__symbol {
@@ -52,7 +49,7 @@
     }
 
     &__statistic-description {
-        @include text(18px, 300, $dark-blue-color, 26px);
+        @include text(18px, 300, $dark-blue-color-80, 26px);
     }
 
     &__description {
@@ -60,7 +57,7 @@
     }
 
     &__text {
-        @include text(18px, 300, $dark-blue-color, 26px);
+        @include text(18px, 300, $dark-blue-color-80, 26px);
         margin-bottom: 50px;
     }
 
@@ -70,6 +67,5 @@
         background-color: $green-color;
         margin-top: 40px;
         margin-bottom: 40px;
-        
     }
 }
