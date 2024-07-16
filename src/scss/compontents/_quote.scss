@@ -1,0 +1,40 @@
+.quote {
+    position: relative;
+    background-image: url(../../assets/quote-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1170px;
+    height: 400px;
+
+    &__wrap {
+        // position: relative;
+        // border: 1px solid red;
+    }
+
+    &__text-wrap {
+        max-width: 710px;
+        margin: 100px 160px;
+        // border: 1px solid red;
+    }
+
+    &__icon {
+        position: absolute;
+        width: 102px;
+        height: 84px;
+        bottom: 247px;
+        left: 100px;
+        // border: 1px solid red;
+    }
+
+    &__text {
+        @include text(32px, 400, $white-color, 46px);
+        letter-spacing: 0.64px;
+        margin-bottom: 40px;
+    }
+
+    &__author {
+        @include text(20px, 400, $white-color, 20px, "secondary");
+        font-style: italic;
+        letter-spacing: 1.28px;
+    }
+}
