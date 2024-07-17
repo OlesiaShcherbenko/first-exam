@@ -1,61 +1,90 @@
 .promises {
+    // border: 1px solid red;
     position: relative;
     display: inline-block;
+    height: 540px;
+    @include flex($alignment: center, $justification: flex-end);
+
+    // &__image-wrapper {
+    //     // visibility: visible;
+    //     max-width: 600px;
+    //     max-height: 540px;
+    //     position: absolute;
+    //     top: 45;
+    //     left: 0;
+    //     z-index: -1;
+
+    //     @include media("mobile") {
+    //         // display: none;
+    //     }
+    // }
+
+    &__image-wrapper {
+        display: none;
+
+        @include media("mobile") {
+            display: inline;
+            max-width: 600px;
+            max-height: 540px;
+            position: absolute;
+            top: 45;
+            left: 0;
+            z-index: -1;
+        }
+    }
 
     &__image {
-        max-width: 600px;
-        max-height: 540px;
-        display: block;
+        width: 100%;
+        // max-width: 600px;
+        // max-height: 540px;
+        // display: block;
     }
 
     &__text-container {
+        // @include flex($justification: center);
         background-color: $white-color-90;
         max-width: 770px;
-        max-height: auto;
-        position: absolute;
-        top: 45px;
-        left: 400px;
-        @include flex();
+        // max-height: auto;
+        display: block;
         // border: 1px solid red;
-        padding: 75px 0 75px 70px;
     }
 
     &__list {
-        // border: 1px solid red;
-        @include flex();
+        // border: 1px solid blue;
+        @include flex($alignment: space-between, $justification: space-between);
         row-gap: 70px;
         column-gap: 100px;
         flex-wrap: wrap;
+        margin: 75px 0 75px 70px;
     }
 
     &__item {
-        // border: 1px solid blue;
+        // border: 1px solid green;
         width: 300px;
+        // flex: 1;
     }
 
-   &__title {
-    @include text(24px, 400, $dark-blue-color, 48px, "secondary");
+    &__title {
+        @include text(24px, 400, $dark-blue-color, 48px, "secondary");
         margin-bottom: 8px;
-   }
+    }
 
-   &__pros {
-    @include text(18px, 300, $dark-blue-color-80, 26px);
-    margin-bottom: 6px;
-   }
+    &__pros {
+        @include text(18px, 300, $dark-blue-color-80, 26px);
+        margin-bottom: 6px;
+    }
 
-   &__button {
-    padding: 33px 90px;
-    border: 1px solid $gray-color;
-    text-align: center;
-    @include flex($alignment: center, $justification: center);
-    // border: 1px solid red;
-   }
+    &__button {
+        padding: 33px 90px;
+        border: 1px solid $gray-color;
+        text-align: center;
+        @include flex($alignment: center, $justification: center);
+        // border: 1px solid red;
+    }
 
-   &__bg {
-    position: absolute;
+    &__bg {
+        position: absolute;
         left: 99px;
         top: 62px;
-        
-   } 
-   
+    }
 }

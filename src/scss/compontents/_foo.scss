@@ -10,6 +10,7 @@
         padding-top: 30px;
         padding-bottom: 30px;
         // border: 1px solid red;
+        flex-wrap: wrap
     }
 
     &__meta {
@@ -25,10 +26,12 @@
     &__dev {
         @include flex();
         column-gap: 12px;
+        
     }
 
     &__agreements {
         @include flex();
         column-gap: 32px;
+        
     }
 }

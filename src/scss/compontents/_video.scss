@@ -4,8 +4,13 @@
 
     &__inner {
         // border: 1px solid red;
-        width: 970px;
-        height: auto;
+        max-width: 343px;
+        max-height: auto;
+
+        @include media("mobile") {
+            max-width: 970px;
+            max-height: auto;
+        }
     }
 
     &__figure {
@@ -18,8 +23,9 @@
     }
 
     &__frame {
-        width: 870px;
-        height: 539px;
+        // border: 1px solid red;
+        max-width: 870px;
+        max-height: 539px;
         position: absolute;
         top: 31px;
         left: 30px;
@@ -29,28 +35,49 @@
 
     &__mockup-tablet {
         // position: relative;
-        width: 970px;
-        height: 601px;
+        // border: 1px solid red;
+
+        max-width: 343px;
+        max-height: auto;
+
+        @include media("mobile") {
+            max-width: 970px;
+            max-height: 601px;
+        }
     }
 
     &__screensaver {
         position: absolute;
-        width: 870px;
-        height: 539px;
-        top: 31px;
-        left: 30px;
+        max-width: 304px;
+        max-height: 188px;
+        top: 11px;
+        left: 12px;
         // z-index: 1;
+
+        @include media("mobile") {
+            max-width: 870px;
+            max-height: 539px;
+            top: 31px;
+            left: 30px;
+        }
     }
 
     &__icon {
         position: absolute;
-        top: 240px;
-        left: 405px;
+        width: 42px;
+        height: 42px;
+        top: 90px;
+        left: 140px;
+
+        @include media("mobile") {
+            top: 240px;
+            left: 405px;
+        }
     }
 
     &__figcaption {
-        width: 880px;
-        height: auto;
+        max-width: 880px;
+        max-height: auto;
     }
 
     &__titel {

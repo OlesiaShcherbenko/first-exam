@@ -28,10 +28,14 @@
     }
 
     &__list-items {
-        @include flex($alignment: center, $justification: flex-end);
-        gap: 30px;
+        display: none;
         // border: 2px solid blue;
         list-style: none;
+
+        @include media("mobile") {
+            @include flex($alignment: center, $justification: flex-end);
+        gap: 30px;
+        }
     }
 
     &__list-item {

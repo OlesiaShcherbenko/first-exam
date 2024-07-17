@@ -16,6 +16,7 @@
     &__cards-wrapper {
         @include flex();
         gap: 30px;
+        flex-wrap: wrap;
     }
 
     &__card {
@@ -25,6 +26,7 @@
         background-size: cover;
         width: 370px;
         height: 340px;
+        
     }
 
     &__text-wrapper {

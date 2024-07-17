@@ -23,5 +23,11 @@ body {
     background-image: url(../assets/bg-hero.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     max-height: 1028px;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -100;
 }

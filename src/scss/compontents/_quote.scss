@@ -3,8 +3,8 @@
     background-image: url(../../assets/bg-quote.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1170px;
-    height: 400px;
+    max-width: 1170px;
+    max-height: 400px;
 
     &__wrap {
         // position: relative;
