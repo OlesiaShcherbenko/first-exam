@@ -1,12 +1,10 @@
 .info {
-    // border: 1px solid red;
     position: relative;
     display: inline-block;
-    height: 670px;
+    max-height: 670px;
     @include flex($alignment: center, $justification: flex-end);
 
     &__image-wrapper {
-        // visibility: visible;
         display: none;
 
         @include media("mobile") {
@@ -22,25 +20,22 @@
 
     &__image {
         width: 100%;
-        // display: block;
         @include media("mobile") {
         }
     }
 
     &__text-container {
-        // border: 1px solid blue;
-        background-color: $white-color-90;
-        max-width: 770px;
-        // max-height: auto;
-        // position: absolute;
-        // top: 45px;
-        // left: 400px;
-        display: block;
-        @include flex($justification: flex-end);
-        // border: 1px solid red;
-        // padding: 45px 0;
-        flex-wrap: wrap;
-        padding: 45px 0;
+        margin-top: 100px;
+
+        @include media("mobile") {
+            background-color: $white-color-90;
+            max-width: 770px;
+            display: block;
+            @include flex($justification: flex-end);
+            flex-wrap: wrap;
+            padding: 45px 0;
+            margin-top: 0;
+        }
     }
 
     &__list {
@@ -52,24 +47,20 @@
 
     &__list-item {
         width: 100%;
-        // border: 1px solid green;
     }
 
     &__statistic {
         @include flex($alignment: flex-end, $justification: center);
         gap: 10px;
-        // border: 1px solid green;
         margin-bottom: 12px;
     }
 
     &__symbol {
         @include text(40px, 400, $gray-color, 50px, "secondary");
-        // border: 1px solid green;
     }
 
     &__number {
         @include text(68px, 400, $dark-blue-color, 72px, "secondary");
-        // border: 1px solid green;
     }
 
     &__statistic-description {
@@ -77,7 +68,13 @@
     }
 
     &__description {
-        max-width: 400px;
+        margin-top: 24px;
+        margin-left: 16px;
+        margin-right: 16px;
+
+        @include media("mobile") {
+            max-width: 400px;
+        }
     }
 
     &__text {

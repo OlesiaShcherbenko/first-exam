@@ -1,12 +1,14 @@
 .hero {
-    // border: 1px solid blue;
     margin-top: 174px;
     margin-bottom: 30px;
-    // @include flex($justification: flex-start);
 
     &__wrapper {
         max-width: 523px;
-        // margin-left: 135px;
+        margin-left: 16px;
+
+        @include media("mobile") {
+            margin-left: 0;
+        }
     }
 
     &__heading {
