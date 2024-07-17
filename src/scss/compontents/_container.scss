@@ -3,5 +3,9 @@
     width: 100%;
     margin: 0 auto;
     @include flex($direction: column);
-    row-gap: 120px;
+    row-gap: 50px;
+
+    @include media("mobile") {
+        row-gap: 120px;
+    }
 }

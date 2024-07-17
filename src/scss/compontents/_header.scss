@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    top: 30px;
+    top: 10px;
     padding-top: 24px;
     padding-bottom: 24px;
     background: -webkit-gradient(
@@ -36,6 +36,10 @@
         );
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+
+    @include media("mobile") {
+        top: 30px;
+    }
 
     &__navigation {
         @extend .container;

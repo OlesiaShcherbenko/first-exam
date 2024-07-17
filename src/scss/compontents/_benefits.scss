@@ -1,13 +1,21 @@
 .benefits {
+    margin-top: 220px;
+    margin-right: 16px;
+    margin-left: 16px;
     @include flex();
     column-gap: 30px;
-    row-gap: 60px;
+    row-gap: 35px;
     flex-wrap: wrap;
 
+    @include media("mobile") {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        row-gap: 60px;
+    }
+
     &__wrapper {
-        // border: 1px solid red;
-        width: 570px;
-        // flex: 1;
+        max-width: 570px;
     }
 
     &__item-divider {
@@ -17,16 +25,27 @@
     }
 
     &__item-wrapper {
-        margin: 50px 35px;
-        // border: 1px solid green;
+        @include media("mobile") {
+            margin: 50px 35px;
+        }
     }
 
     &__item-title {
-        @include text(40px, 400, $dark-blue-color, 48px, "secondary");
-        margin-bottom: 30px;
+        @include text(32px, 400, $dark-blue-color, 38px, "secondary");
+        margin-top: 35px;
+        margin-bottom: 15px;
+
+        @include media("mobile") {
+            @include text(40px, 400, $dark-blue-color, 48px, "secondary");
+            margin-bottom: 30px;
+        }
     }
 
     &__item-description {
-        @include text(18px, 300, $dark-blue-color-80, 26px);
+        @include text(16px, 300, $dark-blue-color-80, 24px);
+
+        @include media("mobile") {
+            @include text(18px, 300, $dark-blue-color-80, 26px);
+        }
     }
 }

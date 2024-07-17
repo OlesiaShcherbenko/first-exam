@@ -20,12 +20,10 @@
 
     &__image {
         width: 100%;
-        @include media("mobile") {
-        }
     }
 
     &__text-container {
-        margin-top: 100px;
+        margin-top: 150px;
 
         @include media("mobile") {
             background-color: $white-color-90;
