@@ -1,9 +1,7 @@
 .video {
-    // border: 1px solid blue;
     @include flex($justification: center);
 
     &__inner {
-        // border: 1px solid red;
         max-width: 343px;
         max-height: auto;
 
@@ -23,7 +21,6 @@
     }
 
     &__frame {
-        // border: 1px solid red;
         max-width: 870px;
         max-height: 539px;
         position: absolute;
@@ -34,9 +31,6 @@
     }
 
     &__mockup-tablet {
-        // position: relative;
-        // border: 1px solid red;
-
         max-width: 343px;
         max-height: auto;
 
@@ -52,7 +46,6 @@
         max-height: 188px;
         top: 11px;
         left: 12px;
-        // z-index: 1;
 
         @include media("mobile") {
             max-width: 870px;
@@ -81,11 +74,19 @@
     }
 
     &__titel {
-        @include text(40px, 400, $dark-blue-color, 48px, "secondary");
+        @include text(32px, 400, $dark-blue-color, 38px, "secondary");
         margin-bottom: 20px;
+
+        @include media("mobile") {
+            @include text(40px, 400, $dark-blue-color, 48px, "secondary");
+        }
     }
 
     &__description {
-        @include text(18px, 300, $dark-blue-color-80, 26px);
+        @include text(16px, 300, $dark-blue-color-80, 24px);
+
+        @include media("mobile") {
+            @include text(18px, 300, $dark-blue-color-80, 26px);
+        }
     }
 }

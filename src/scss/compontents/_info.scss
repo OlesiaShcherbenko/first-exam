@@ -24,13 +24,15 @@
 
     &__text-container {
         margin-top: 150px;
+        @include flex();
+        flex-wrap: wrap;
 
         @include media("mobile") {
             background-color: $white-color-90;
             max-width: 770px;
             display: block;
             @include flex($justification: flex-end);
-            flex-wrap: wrap;
+
             padding: 45px 0;
             margin-top: 0;
         }
@@ -76,8 +78,13 @@
     }
 
     &__text {
-        @include text(18px, 300, $dark-blue-color-80, 26px);
-        margin-bottom: 50px;
+        @include text(16px, 300, $dark-blue-color-80, 26px);
+        margin-bottom: 30px;
+
+        @include media("mobile") {
+            @include text(18px, 300, $dark-blue-color-80, 26px);
+            margin-bottom: 50px;
+        }
     }
 
     &__divider {
