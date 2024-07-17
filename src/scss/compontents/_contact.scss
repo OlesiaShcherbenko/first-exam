@@ -76,10 +76,25 @@
     }
 
     &__button {
-        border-style: none;
-        background-color: transparent;
         @include text(20px, 700, $coral-color, 20px);
         letter-spacing: 1.28px;
         text-transform: uppercase;
+        border-style: none;
+        background-color: transparent;
+        position: relative;
+
+        &:hover {
+            color: $dark-coral-color;
+        }
+
+        &::after {
+            position: absolute;
+            background: $coral-color-30;
+            content: "";
+            top: 11px;
+            left: 10px;
+            width: 98%;
+            height: 13px;
+        }
     }
 }

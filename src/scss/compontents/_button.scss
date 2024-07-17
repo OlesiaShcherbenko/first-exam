@@ -1,24 +1,24 @@
 .button {
-    position: relative;
-
-    &__link {
-        text-decoration: none;
+    &__text {
         @include text(20px, 700, $coral-color, 20px);
+        text-decoration: none;
         letter-spacing: 1.28px;
         text-transform: uppercase;
+        position: relative;
 
         &:hover {
             cursor: pointer;
             color: $dark-coral-color;
         }
-    }
 
-    &__bg {
-        height: 13px;
-        width: 112px;
-        background-color: $coral-color-30;
-        position: absolute;
-        left: 10px;
-        top: 11px;
+        &::after {
+            position: absolute;
+            background: $coral-color-30;
+            content: "";
+            top: 11px;
+            left: 10px;
+            width: 98%;
+            height: 13px;
+        }
     }
 }
