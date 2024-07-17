@@ -1,4 +1,12 @@
 .contact {
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @include media("mobile") {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     &__divider {
         height: 1px;
         width: 100%;
@@ -8,9 +16,15 @@
     &__wrapper {
         @include flex();
         column-gap: 230px;
-        margin-top: 60px;
-        margin-bottom: 100px;
+        row-gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 50px;
         flex-wrap: wrap;
+
+        @include media("mobile") {
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
     }
 
     &__heading {
@@ -18,19 +32,26 @@
     }
 
     &__title {
-        @include text(40px, 400, $dark-blue-color, 48px, "secondary");
-        margin-bottom: 29px;
+        @include text(32px, 400, $dark-blue-color, 38px, "secondary");
+        margin-bottom: 20px;
+
+        @include media("mobile") {
+            @include text(40px, 400, $dark-blue-color, 48px, "secondary");
+        }
     }
 
     &__description {
-        @include text(18px, 300, $dark-blue-color-80, 26px);
+        @include text(16px, 300, $dark-blue-color-80, 24px);
+
+        @include media("mobile") {
+            @include text(18px, 300, $dark-blue-color-80, 26px);
+        }
     }
 
     &__form {
         @include flex($direction: column, $alignment: flex-start);
         width: 470px;
         height: auto;
-        // border: 1px solid red;
     }
 
     &__input {
