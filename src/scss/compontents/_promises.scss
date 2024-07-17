@@ -1,8 +1,7 @@
 .promises {
-    // border: 1px solid red;
     position: relative;
     display: inline-block;
-    
+
     @include flex($alignment: center, $justification: center);
 
     @include media("mobile") {
@@ -31,7 +30,6 @@
     &__text-container {
         background-color: $white-color-90;
         max-width: 340px;
-        // border: 1px solid green;
 
         @include media("mobile") {
             max-width: 770px;
@@ -39,19 +37,11 @@
     }
 
     &__list {
-        // border: 1px solid red;
-        @include flex(
-            $direction: column,
-            // $alignment: space-between,
-            // $justification: space-between
-        );
+        @include flex($direction: column);
         row-gap: 32px;
 
         @include media("mobile") {
-            @include flex(
-                // $alignment: space-between,
-                // $justification: space-between
-            );
+            @include flex();
             row-gap: 70px;
             column-gap: 100px;
             flex-wrap: wrap;
@@ -60,10 +50,7 @@
     }
 
     &__item {
-        // border: 1px solid red;
         max-width: 400px;
-       
-
 
         @include media("mobile") {
             width: 300px;
