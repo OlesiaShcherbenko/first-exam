@@ -55,7 +55,7 @@
     }
 
     &__input {
-        @include text(18px, 400, $dark-blue-color-50, 20px, "secondary");
+        @include text(18px, 400, $dark-blue-color, 20px, "secondary");
         font-style: italic;
         letter-spacing: 1.28px;
         padding-bottom: 12px;
@@ -64,6 +64,15 @@
         border-bottom: 1px solid $dark-blue-color-10;
         margin-bottom: 40px;
         width: 100%;
+
+        &::placeholder {
+            color: $dark-blue-color-50;
+        }
+
+        &:focus {
+            outline: none;
+            border-bottom-color: $dark-blue-color-50;
+        }
     }
 
     &__button {
