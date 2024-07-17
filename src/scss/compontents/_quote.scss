@@ -7,27 +7,35 @@
     max-height: 400px;
 
     &__wrap {
-        // position: relative;
-        // border: 1px solid red;
         max-width: 710px;
-        margin: 100px 160px;
-    }
+        margin: 48px 32px;
 
-    
+        @include media("mobile") {
+            margin: 100px 160px;
+        }
+    }
 
     &__icon {
         position: absolute;
         width: 102px;
         height: 84px;
-        bottom: 247px;
-        left: 100px;
-        // border: 1px solid red;
+        top: 10px;
+        left: 10px;
+
+        @include media("mobile") {
+            top: 70px;
+            left: 100px;
+        }
     }
 
     &__text {
-        @include text(32px, 400, $white-color, 46px);
+        @include text(24px, 400, $white-color, 34px);
         letter-spacing: 0.64px;
         margin-bottom: 40px;
+
+        @include media("mobile") {
+            @include text(32px, 400, $white-color, 46px);
+        }
     }
 
     &__author {
