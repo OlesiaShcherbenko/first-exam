@@ -2,22 +2,13 @@
     // border: 1px solid red;
     position: relative;
     display: inline-block;
-    height: 540px;
-    @include flex($alignment: center, $justification: flex-end);
+    
+    @include flex($alignment: center, $justification: center);
 
-    // &__image-wrapper {
-    //     // visibility: visible;
-    //     max-width: 600px;
-    //     max-height: 540px;
-    //     position: absolute;
-    //     top: 45;
-    //     left: 0;
-    //     z-index: -1;
-
-    //     @include media("mobile") {
-    //         // display: none;
-    //     }
-    // }
+    @include media("mobile") {
+        min-height: 540px;
+        @include flex($alignment: center, $justification: flex-end);
+    }
 
     &__image-wrapper {
         display: none;
@@ -35,33 +26,48 @@
 
     &__image {
         width: 100%;
-        // max-width: 600px;
-        // max-height: 540px;
-        // display: block;
     }
 
     &__text-container {
-        // @include flex($justification: center);
         background-color: $white-color-90;
-        max-width: 770px;
-        // max-height: auto;
-        display: block;
-        // border: 1px solid red;
+        max-width: 340px;
+        // border: 1px solid green;
+
+        @include media("mobile") {
+            max-width: 770px;
+        }
     }
 
     &__list {
-        // border: 1px solid blue;
-        @include flex($alignment: space-between, $justification: space-between);
-        row-gap: 70px;
-        column-gap: 100px;
-        flex-wrap: wrap;
-        margin: 75px 0 75px 70px;
+        // border: 1px solid red;
+        @include flex(
+            $direction: column,
+            // $alignment: space-between,
+            // $justification: space-between
+        );
+        row-gap: 32px;
+
+        @include media("mobile") {
+            @include flex(
+                // $alignment: space-between,
+                // $justification: space-between
+            );
+            row-gap: 70px;
+            column-gap: 100px;
+            flex-wrap: wrap;
+            margin: 75px 0 75px 70px;
+        }
     }
 
     &__item {
-        // border: 1px solid green;
-        width: 300px;
-        // flex: 1;
+        // border: 1px solid red;
+        max-width: 400px;
+       
+
+
+        @include media("mobile") {
+            width: 300px;
+        }
     }
 
     &__title {
@@ -79,7 +85,6 @@
         border: 1px solid $gray-color;
         text-align: center;
         @include flex($alignment: center, $justification: center);
-        // border: 1px solid red;
     }
 
     &__bg {
