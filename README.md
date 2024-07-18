@@ -1,7 +1,34 @@
 # First Exam
 
-## About
-Context and progress go here
+## Layout requirements
+
+- Valid HTML/CSS
+
+- Semantic layout
+
+- Matching the template (use pixel perfect) with a resolution of 1200 pixels and higher:
+
+     - The bg block should stretch to the full width of the screen
+
+     - Use fonts as in the template
+
+     - Connect fonts with Google Fonts
+
+- Cross-browser compatibility with Chrome, Firefox, Safari
+
+- Responsive layout
+
+- All interactive elements should have :hover, :focus styles
+
+- Use favicon
+
+- Use preprocessors
+
+It will be a bonus:
+
+     - Using SVG
+
+     - Initial validation of the form
 
 ## Installation
 
@@ -16,7 +43,7 @@ Context and progress go here
    ```
 4. Build for production
    ```bash
-   npm run build
+   npm run deploy
    ```
 
 ## Copyright
