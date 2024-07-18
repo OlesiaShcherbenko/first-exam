@@ -1,12 +1,4 @@
 .contact {
-    margin-left: 16px;
-    margin-right: 16px;
-
-    @include media("mobile") {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     &__divider {
         height: 1px;
         width: 100%;

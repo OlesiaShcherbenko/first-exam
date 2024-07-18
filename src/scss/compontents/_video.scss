@@ -3,7 +3,7 @@
     @include flex($justification: center);
 
     &__inner {
-        max-width: 343px;
+        max-width: 359px;
         max-height: auto;
 
         @include media("mobile") {
@@ -43,7 +43,7 @@
     }
 
     &__mockup-tablet {
-        max-width: 343px;
+        max-width: 359px;
         max-height: auto;
 
         @include media("mobile") {
@@ -58,8 +58,8 @@
 
     &__screensaver {
         position: absolute;
-        max-width: 304px;
-        max-height: 188px;
+        max-width: 320px;
+        max-height: 204px;
         top: 11px;
         left: 12px;
 
@@ -75,8 +75,8 @@
         position: absolute;
         width: 42px;
         height: 42px;
-        top: 85px;
-        left: 143px;
+        top: 93px;
+        left: 151px;
 
         @include media("mobile") {
             width: 120px;

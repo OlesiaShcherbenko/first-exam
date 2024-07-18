@@ -1,7 +1,6 @@
 .info {
     position: relative;
     display: inline-block;
-    max-height: 670px;
     @include flex($alignment: center, $justification: flex-start);
 
     &__image-wrapper {
@@ -27,7 +26,6 @@
     }
 
     &__text-container {
-        margin-top: 150px;
         @include flex();
         flex-wrap: wrap;
 
@@ -74,8 +72,7 @@
 
     &__description {
         margin-top: 24px;
-        margin-left: 16px;
-        margin-right: 16px;
+        max-width: 359px;
 
         @include media("mobile") {
             max-width: 400px;

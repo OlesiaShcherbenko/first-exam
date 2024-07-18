@@ -1,12 +1,4 @@
 .foo {
-    margin-left: 8px;
-    margin-right: 8px;
-
-    @include media("mobile") {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     &__divider {
         height: 1px;
         width: 100%;

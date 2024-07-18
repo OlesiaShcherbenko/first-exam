@@ -1,11 +1,12 @@
 .container {
-    max-width: $container-width;
+    max-width: $container-width-s;
     width: 100%;
     margin: 0 auto;
     @include flex($direction: column);
     row-gap: 50px;
 
     @include media("mobile") {
+        max-width: $container-width;
         row-gap: 120px;
     }
 }

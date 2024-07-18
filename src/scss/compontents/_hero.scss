@@ -9,12 +9,8 @@
 
     &__wrapper {
         max-width: 523px;
-        margin-left: 16px;
-        margin-right: 16px;
 
         @include media("mobile") {
-            margin-left: 0;
-            margin-right: 0;
         }
     }
 

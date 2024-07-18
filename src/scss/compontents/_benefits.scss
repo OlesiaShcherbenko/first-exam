@@ -1,7 +1,4 @@
 .benefits {
-    margin-top: 220px;
-    margin-right: 16px;
-    margin-left: 16px;
     @include flex();
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
@@ -11,8 +8,6 @@
 
     @include media("mobile") {
         margin-top: 0;
-        margin-right: 0;
-        margin-left: 0;
         row-gap: 60px;
     }
 

@@ -32,7 +32,7 @@
 
     &__text-container {
         background-color: $white-color-90;
-        max-width: 340px;
+        width: 100%;
 
         @include media("mobile") {
             position: absolute;
@@ -59,7 +59,7 @@
     }
 
     &__item {
-        max-width: 400px;
+        max-width: 359px;
 
         @include media("mobile") {
             width: 300px;
@@ -81,11 +81,5 @@
         border: 1px solid $gray-color;
         text-align: center;
         @include flex($alignment: center, $justification: center);
-    }
-
-    &__bg {
-        position: absolute;
-        left: 99px;
-        top: 62px;
     }
 }
