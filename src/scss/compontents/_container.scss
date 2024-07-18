@@ -3,7 +3,7 @@
     width: 100%;
     margin: 0 auto;
     @include flex($direction: column);
-    row-gap: 50px;
+    row-gap: 100px;
 
     @include media("mobile") {
         max-width: $container-width;

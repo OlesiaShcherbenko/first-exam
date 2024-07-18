@@ -28,6 +28,7 @@
     &__text-container {
         @include flex();
         flex-wrap: wrap;
+        width: 100%;
 
         @include media("mobile") {
             position: absolute;

@@ -3,12 +3,12 @@
     @include flex($justification: center);
 
     &__inner {
-        max-width: 359px;
+        max-width: 343px;
         max-height: auto;
 
         @include media("mobile") {
             max-width: 970px;
-            max-height: auto;
+            max-height: 777px;
         }
     }
 
@@ -23,8 +23,8 @@
 
     &__tablet {
         position: relative;
-        max-width: 970px;
-        max-height: 601px;
+        width: 343px;
+        height: 212.52px;
 
         @include media("mobile") {
             width: 970px;
@@ -33,8 +33,6 @@
     }
 
     &__frame {
-        max-width: 870px;
-        max-height: 539px;
         position: absolute;
         top: 31px;
         left: 30px;
@@ -43,8 +41,8 @@
     }
 
     &__mockup-tablet {
-        max-width: 359px;
-        max-height: auto;
+        max-width: 343px;
+        max-height: 212.52px;
 
         @include media("mobile") {
             max-width: 970px;
@@ -58,8 +56,8 @@
 
     &__screensaver {
         position: absolute;
-        max-width: 320px;
-        max-height: 204px;
+        max-width: 307.64px;
+        max-height: 190.59px;
         top: 11px;
         left: 12px;
 
@@ -75,8 +73,8 @@
         position: absolute;
         width: 42px;
         height: 42px;
-        top: 93px;
-        left: 151px;
+        top: 85px;
+        left: 150px;
 
         @include media("mobile") {
             width: 120px;
@@ -91,20 +89,7 @@
         max-height: auto;
     }
 
-    &__titel {
-        @include text(32px, 400, $dark-blue-color, 38px, "secondary");
+    &__title {
         margin-bottom: 20px;
-
-        @include media("mobile") {
-            @include text(40px, 400, $dark-blue-color, 48px, "secondary");
-        }
-    }
-
-    &__description {
-        @include text(16px, 300, $dark-blue-color-80, 24px);
-
-        @include media("mobile") {
-            @include text(18px, 300, $dark-blue-color-80, 26px);
-        }
     }
 }

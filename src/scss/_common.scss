@@ -31,3 +31,19 @@ body {
     left: 0;
     z-index: -100;
 }
+
+.title {
+    @include text(32px, 400, $dark-blue-color, 38px, "secondary");
+
+    @include media("mobile") {
+        @include text(40px, 400, $dark-blue-color, 48px, "secondary");
+    }
+}
+
+.description {
+    @include text(16px, 300, $dark-blue-color-80, 24px);
+
+    @include media("mobile") {
+        @include text(18px, 300, $dark-blue-color-80, 26px);
+    }
+}

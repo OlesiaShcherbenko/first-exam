@@ -12,7 +12,7 @@
         column-gap: 230px;
         row-gap: 30px;
         margin-top: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         flex-wrap: wrap;
 
         @include media("mobile") {
@@ -26,21 +26,8 @@
     }
 
     &__title {
-        @include text(32px, 400, $dark-blue-color, 38px, "secondary");
-        margin-bottom: 20px;
-
-        @include media("mobile") {
-            @include text(40px, 400, $dark-blue-color, 48px, "secondary");
-        }
-    }
-
-    &__description {
-        @include text(16px, 300, $dark-blue-color-80, 24px);
-
-        @include media("mobile") {
-            @include text(18px, 300, $dark-blue-color-80, 26px);
-        }
-    }
+        margin-bottom: 30px;
+    } 
 
     &__form {
         @include flex($direction: column, $alignment: flex-start);
