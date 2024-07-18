@@ -11,18 +11,6 @@
             to(rgba(255, 255, 255, 0.02))
         ),
         -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(24.1%, rgba(255, 255, 255, 0.244636)), color-stop(47.19%, rgba(255, 255, 255, 0)));
-    background: -o-linear-gradient(
-            bottom,
-            rgba(255, 255, 255, 0.02),
-            rgba(255, 255, 255, 0.02)
-        ),
-        -o-linear-gradient(right, rgba(255, 255, 255, 0.5) 0%, rgba(
-                        255,
-                        255,
-                        255,
-                        0.244636
-                    )
-                    24.1%, rgba(255, 255, 255, 0) 47.19%);
     background: linear-gradient(
             0deg,
             rgba(255, 255, 255, 0.02),

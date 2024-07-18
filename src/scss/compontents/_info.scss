@@ -46,6 +46,7 @@
         width: 370px;
         text-align: center;
         @include flex($direction: column, $alignment: center);
+        -webkit-box-flex: 1;
         flex: 1;
     }
 

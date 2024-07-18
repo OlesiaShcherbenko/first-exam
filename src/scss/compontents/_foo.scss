@@ -41,11 +41,15 @@
 
     &__dev {
         @include flex();
+        -webkit-column-gap: 12px;
+        -moz-column-gap: 12px;
         column-gap: 12px;
     }
 
     &__agreements {
         @include flex();
+        -webkit-column-gap: 32px;
+        -moz-column-gap: 32px;
         column-gap: 32px;
     }
 }
