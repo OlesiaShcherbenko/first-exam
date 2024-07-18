@@ -10,9 +10,7 @@
 
      - The bg block should stretch to the full width of the screen
 
-     - Use fonts as in the template
-
-     - Connect fonts with Google Fonts
+     - Use fonts as in the template & Connect fonts with Google Fonts
 
 - Cross-browser compatibility with Chrome, Firefox, Safari
 
@@ -26,9 +24,9 @@
 
 It will be a bonus:
 
-     - Using SVG
+- Initial validation of the form
 
-     - Initial validation of the form
+- Using SVG
 
 ## Installation
 
