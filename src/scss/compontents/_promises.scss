@@ -1,0 +1,85 @@
+.promises {
+    @include flex($alignment: center, $justification: center);
+
+    @include media("mobile") {
+        display: inline-block;
+        position: relative;
+        min-height: 540px;
+        @include flex($alignment: center, $justification: flex-start);
+    }
+
+    &__image-wrapper {
+        display: none;
+
+        @include media("mobile") {
+            display: inline-block;
+            width: 600px;
+            height: 540px;
+            position: relative;
+            z-index: -1;
+        }
+    }
+
+    &__image {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__text-container {
+        background-color: $white-color-90;
+        width: 100%;
+
+        @include media("mobile") {
+            position: absolute;
+            max-width: 770px;
+            margin-top: 0;
+            z-index: 10;
+            right: 0;
+        }
+    }
+
+    &__list {
+        @include flex($direction: column);
+        row-gap: 32px;
+
+        @include media("mobile") {
+            @include flex();
+            row-gap: 70px;
+            -webkit-column-gap: 100px;
+            -moz-column-gap: 100px;
+            column-gap: 100px;
+            flex-wrap: wrap;
+            margin: 75px 0 75px 70px;
+        }
+    }
+
+    &__item {
+        max-width: 359px;
+
+        @include media("mobile") {
+            width: 300px;
+        }
+    }
+
+    &__title {
+        @include text(24px, 400, $dark-blue-color, 48px, "secondary");
+        margin-bottom: 8px;
+    }
+
+    &__pros {
+        @include text(18px, 300, $dark-blue-color-80, 26px);
+        margin-bottom: 6px;
+    }
+
+    &__button {
+        padding: 33px 90px;
+        border: 1px solid $gray-color;
+        text-align: center;
+        @include flex($alignment: center, $justification: center);
+    }
+}

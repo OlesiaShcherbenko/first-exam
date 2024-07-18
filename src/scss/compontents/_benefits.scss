@@ -1,0 +1,36 @@
+.benefits {
+    // border: 1px solid red;
+    @include flex();
+    row-gap: 45px;
+    flex-wrap: wrap;
+
+    @include media("mobile") {
+        -webkit-column-gap: 30px;
+        -moz-column-gap: 30px;
+        column-gap: 30px;
+        margin-top: 0;
+        row-gap: 60px;
+    }
+
+    &__wrapper {
+        max-width: 570px;
+    }
+
+    &__item-divider {
+        height: 1px;
+        width: 100%;
+        background-color: $gray-color;
+    }
+
+    &__item-wrapper {
+        margin-top: 45px;
+
+        @include media("mobile") {
+            margin: 50px 35px;
+        }
+    }
+
+    &__item-title {
+        margin-bottom: 30px;
+    }
+}

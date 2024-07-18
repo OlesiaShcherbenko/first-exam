@@ -1,0 +1,95 @@
+.video {
+    max-height: 777px;
+    @include flex($justification: center);
+
+    &__inner {
+        max-width: 343px;
+        max-height: auto;
+
+        @include media("mobile") {
+            max-width: 970px;
+            max-height: 777px;
+        }
+    }
+
+    &__figure {
+        @include flex($direction: column);
+        row-gap: 20px;
+
+        @include media("mobile") {
+            row-gap: 50px;
+        }
+    }
+
+    &__tablet {
+        position: relative;
+        width: 343px;
+        height: 212.52px;
+
+        @include media("mobile") {
+            width: 970px;
+            height: 601px;
+        }
+    }
+
+    &__frame {
+        position: absolute;
+        top: 31px;
+        left: 30px;
+        border: none;
+        visibility: hidden;
+    }
+
+    &__mockup-tablet {
+        max-width: 343px;
+        max-height: 212.52px;
+
+        @include media("mobile") {
+            max-width: 970px;
+            max-height: 601px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+        }
+    }
+
+    &__screensaver {
+        position: absolute;
+        max-width: 307.64px;
+        max-height: 190.59px;
+        top: 11px;
+        left: 12px;
+
+        @include media("mobile") {
+            max-width: 870px;
+            max-height: 539px;
+            top: 31px;
+            left: 30px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        top: 85px;
+        left: 150px;
+
+        @include media("mobile") {
+            width: 120px;
+            height: 120px;
+            top: 240px;
+            left: 405px;
+        }
+    }
+
+    &__figcaption {
+        max-width: 880px;
+        max-height: auto;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+}

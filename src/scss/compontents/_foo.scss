@@ -1,0 +1,47 @@
+.foo {
+    &__divider {
+        height: 1px;
+        width: 100%;
+        background-color: $gray-color;
+    }
+
+    &__wrapper {
+        @include flex($alignment: center, $justification: center);
+        padding-top: 30px;
+        padding-bottom: 10px;
+        flex-wrap: wrap;
+
+        @include media("mobile") {
+            @include flex($alignment: center, $justification: space-between);
+            padding-bottom: 30px;
+        }
+    }
+
+    &__meta {
+        @include text(14px, 300, $dark-blue-color-60, 26px);
+    }
+
+    &__link {
+        text-decoration: none;
+        @include text(14px, 400, $dark-blue-color, 26px);
+        letter-spacing: 1.28px;
+
+        &:hover {
+            color: $dark-coral-color;
+        }
+    }
+
+    &__dev {
+        @include flex();
+        -webkit-column-gap: 12px;
+        -moz-column-gap: 12px;
+        column-gap: 12px;
+    }
+
+    &__agreements {
+        @include flex();
+        -webkit-column-gap: 32px;
+        -moz-column-gap: 32px;
+        column-gap: 32px;
+    }
+}

@@ -7,11 +7,22 @@
     @return #{$remSize}rem;
 }
 
+// TYPOGRAPHY
+$fonts: (
+  "main": $font-main,
+  "secondary": $font-secondary,
+);
+
+@mixin font-family($type) {
+  font-family: map.get($fonts, $type);
+}
+
 @mixin text(
   $font-size: 16px,
   $font-weight: 400,
-  $color: black,
+  $color: $dark-blue-color,
   $line-height: initial,
+  $font-family: "main"
 ) {
   font-weight: $font-weight;
   color: $color;
@@ -27,14 +38,18 @@
   } @else {
     line-height: $line-height;
   }
+
+  @include font-family($font-family);
 }
 
+// MEDIA QUERIES
 $breakpoints: (
   "mobile": 768px,
   "desktop": 1024px,
   "hd": 1240px,
   "fullhd": 1440px,
 );
+
 
 @mixin media($screen) {
   @if (string.index(#{$screen}, "px")) {
@@ -46,4 +61,12 @@ $breakpoints: (
       @content;
     }
   }
+}
+
+// FLEX
+@mixin flex($direction: row, $alignment: stretch, $justification: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $alignment;
+  justify-content: $justification;
 }
