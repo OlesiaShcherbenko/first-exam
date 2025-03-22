@@ -1,0 +1,35 @@
+.hero {
+    margin-top: 154px;
+    margin-bottom: 40px;
+
+    @include media("mobile") {
+        margin-top: 174px;
+        margin-bottom: 30px;
+    }
+
+    &__wrapper {
+        max-width: 523px;
+
+        @include media("mobile") {
+        }
+    }
+
+    &__heading {
+        @include text(36px, 400, $dark-blue-color, 46px, "secondary");
+        margin-bottom: 20px;
+
+        @include media("mobile") {
+            @include text(44px, 400, $dark-blue-color, 52px, "secondary");
+        }
+    }
+
+    &__description {
+        @include text(18px, 300, $dark-blue-color-80, 26px);
+        margin-bottom: 30px;
+        max-width: 439px;
+
+        @include media("mobile") {
+            margin-bottom: 50px;
+        }
+    }
+}

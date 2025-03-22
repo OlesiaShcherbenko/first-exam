@@ -1,0 +1,90 @@
+.contact {
+    &__divider {
+        height: 1px;
+        width: 100%;
+        background-color: $gray-color;
+    }
+
+    &__wrapper {
+        @include flex();
+        -webkit-column-gap: 230px;
+        -moz-column-gap: 230px;
+        column-gap: 230px;
+        row-gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        flex-wrap: wrap;
+
+        @include media("mobile") {
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__heading {
+        max-width: 470px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    } 
+
+    &__form {
+        @include flex($direction: column, $alignment: flex-start);
+        width: 470px;
+        height: auto;
+    }
+
+    &__input {
+        @include text(18px, 400, $dark-blue-color, 20px, "secondary");
+        font-style: italic;
+        letter-spacing: 1.28px;
+        padding-bottom: 12px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid $dark-blue-color-10;
+        margin-bottom: 40px;
+        width: 100%;
+
+        &::-webkit-input-placeholder {
+            color: $dark-blue-color-50;
+        }
+
+        &::-moz-placeholder {
+            color: $dark-blue-color-50;
+        }
+
+        &::placeholder {
+            color: $dark-blue-color-50;
+        }
+
+        &:focus {
+            outline: none;
+            border-bottom-color: $dark-blue-color-50;
+        }
+    }
+
+    &__button {
+        @include text(20px, 700, $coral-color, 20px);
+        letter-spacing: 1.28px;
+        text-transform: uppercase;
+        border-style: none;
+        background-color: transparent;
+        position: relative;
+
+        &:hover {
+            color: $dark-coral-color;
+        }
+
+        &::after {
+            position: absolute;
+            background: $coral-color-30;
+            content: "";
+            top: 11px;
+            left: 10px;
+            width: 98%;
+            height: 13px;
+        }
+    }
+}

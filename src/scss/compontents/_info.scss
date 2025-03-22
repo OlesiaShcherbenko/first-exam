@@ -1,0 +1,100 @@
+.info {
+    position: relative;
+    display: inline-block;
+    @include flex($alignment: center, $justification: flex-start);
+
+    &__image-wrapper {
+        display: none;
+
+        @include media("mobile") {
+            display: inline-block;
+            width: 570px;
+            height: 670px;
+            z-index: -1;
+            position: relative;
+        }
+    }
+
+    &__image {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__text-container {
+        @include flex();
+        flex-wrap: wrap;
+        width: 100%;
+
+        @include media("mobile") {
+            position: absolute;
+            background-color: $white-color-90;
+            max-width: 770px;
+            padding: 45px 0;
+            margin-top: 0;
+            z-index: 10;
+            right: 0;
+        }
+    }
+
+    &__list {
+        width: 370px;
+        text-align: center;
+        @include flex($direction: column, $alignment: center);
+        -webkit-box-flex: 1;
+        flex: 1;
+    }
+
+    &__list-item {
+        width: 100%;
+    }
+
+    &__statistic {
+        @include flex($alignment: flex-end, $justification: center);
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    &__symbol {
+        @include text(40px, 400, $gray-color, 50px, "secondary");
+    }
+
+    &__number {
+        @include text(68px, 400, $dark-blue-color, 72px, "secondary");
+    }
+
+    &__statistic-description {
+        @include text(18px, 300, $dark-blue-color-80, 26px);
+    }
+
+    &__description {
+        margin-top: 24px;
+        max-width: 359px;
+
+        @include media("mobile") {
+            max-width: 400px;
+        }
+    }
+
+    &__text {
+        @include text(16px, 300, $dark-blue-color-80, 26px);
+        margin-bottom: 30px;
+
+        @include media("mobile") {
+            @include text(18px, 300, $dark-blue-color-80, 26px);
+            margin-bottom: 50px;
+        }
+    }
+
+    &__divider {
+        height: 1px;
+        width: 100px;
+        background-color: $green-color;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

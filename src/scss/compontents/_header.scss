@@ -1,0 +1,106 @@
+.header {
+    position: relative;
+    top: 10px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            from(rgba(255, 255, 255, 0.02)),
+            to(rgba(255, 255, 255, 0.02))
+        ),
+        -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(24.1%, rgba(255, 255, 255, 0.244636)), color-stop(47.19%, rgba(255, 255, 255, 0)));
+    background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.02),
+            rgba(255, 255, 255, 0.02)
+        ),
+        linear-gradient(
+            270deg,
+            rgba(255, 255, 255, 0.5) 0%,
+            rgba(255, 255, 255, 0.244636) 24.1%,
+            rgba(255, 255, 255, 0) 47.19%
+        );
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+
+    @include media("mobile") {
+        top: 30px;
+    }
+
+    &__navigation {
+        @extend .container;
+        @include flex($alignment: center, $justification: space-between);
+        padding: 0;
+    }
+
+    &__logo {
+        width: 107.2px;
+        height: 32px;
+        fill: $white-color;
+    }
+
+    &__list-items {
+        display: none;
+        list-style: none;
+
+        @include media("mobile") {
+            @include flex($alignment: center, $justification: flex-end);
+            gap: 30px;
+        }
+    }
+
+    &__list-item {
+        @include text(14px, 400, $dark-blue-color, 24px);
+        letter-spacing: 1.28px;
+
+        &:hover {
+            cursor: pointer;
+            border-bottom: 3px solid $coral-color;
+        }
+    }
+
+    &__burger {
+        display: inline-block;
+        cursor: pointer;
+
+        @include media("mobile") {
+            display: none;
+        }
+    }
+
+    &__burger-box {
+        width: 25.5px;
+        height: 18px;
+        position: relative;
+        display: inline-block;
+    }
+
+    &__burger-inner {
+        top: 50%;
+    }
+
+    &__burger-inner,
+    &__burger-inner::before,
+    &__burger-inner::after {
+        width: 24px;
+        height: 2.8px;
+        display: block;
+        position: absolute;
+        background-color: $dark-blue-color;
+    }
+
+    &__burger-inner::before,
+    &__burger-inner::after {
+        content: "";
+    }
+
+    &__burger-inner::before {
+        top: -6.4px;
+    }
+
+    &__burger-inner::after {
+        bottom: -6.4px;
+    }
+}
